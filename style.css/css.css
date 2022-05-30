@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 1rem 1rem;
+}
+#first .container .firstall{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#first .container .firstall .logo{
+    width: 8%;
+}
+#first .container .firstall .logo img{
+    width: 80%;
+}
+#first .container .firstall .navbar{
+    width: 50%;
+}
+#first .container .firstall .navbar a{
+    color: black;
+    margin-left: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+
+}
+#first .container .firstall .icon{
+    width:  6%;
+}
+#first .container .firstall .icon i{
+    font-size: 20px;
+    margin-left: 1rem;
+}
+@media(max-width:576px){
+    #first .navbar{
+        display: none;
+    }
+    #first .container .firstall .logo{
+        margin-left: 6rem;
+        width: 50%;
+    }
+    #first .container .firstall .logo img{
+        width: 60%;
+    }
+    #first .container .firstall .icon i{
+        font-size: 15px;
+        margin-left: 3rem;
+        width: 30%;
+    }
+}
+#secont{
+    background-image: url(https://cdn.shopify.com/s/files/1/0616/9480/4174/files/slider-01_3000x.jpg?v=1652056793);
+    padding: 14rem 0;
+}
+
+#secont .left{
+    padding-left: 6rem;
+}
+#secont .container .left p{
+    
+    font-size: 30px;
+}
+#secont .container .left h1{
+    font-size: 50px;
+}
+#secont .container .left button{
+    color: #fff;
+    background-color: black;
+    padding: .7rem 2rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+@media(max-width:576px){
+    #secont{
+        padding: 10rem 0;
+        background-image: url(https://cdn.shopify.com/s/files/1/0616/9480/4174/files/slider-01_3000x.jpg?v=1652056793);
+        overflow: hidden;
+        background-position: -63% 0rem;
+        text-align: left;
+        height: 80px;
+    }
+    #secont .container{
+        align-items: left;
+    }
+    #secont .container .left{
+        width:100%;
+        margin-right: 5rem;
+        text-align: left;
+        
+    }
+    #secont .container .left p{
+        text-align: left;
+        font-size: 20px;
+    }
+    #secont .container .left h1{
+        font-size: 15px;
+    }
+    #secont .container .left button{
+        color: #fff;
+        background-color: black;
+        padding: .7rem 1.5rem;
+        margin-top: 1rem;
+        border: 1px solid black;
+        font-size: 10px;
+    }
+
+    
+}
+#Brand{
+    margin: 10rem 0;
+}
+
+.container{
+    padding: 0 4rem;
+}
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.line-l{
+    top: 0;
+    left: 0%;
+    z-index: 111111111111111111111;
+    width: 2px;
+    height: 0;
+    transition: .5s;
+}
+
+.line-r{
+    bottom: 0;
+    right: 0;
+    z-index: 111111111111111111111;
+    width: 2px;
+    height: 0;
+    transition: .5s;
+}
+
+.box:hover .line-l {
+    height: 100%;
+}
+
+.box:hover .line-r {
+    height: 100%;
+}
+
+.box:hover .line-t {
+    width: 100%;
+}
+
+.box:hover .line-b {
+    width: 100%;
+}
+
+.line-t{
+    top: 0;
+    left: 0;
+    z-index: 111111111111111111111;
+    transition: .5s;
+    width: 0%;
+    height: 2px;
+}
+
+.line-b{
+    bottom: 0;
+    right: 0;
+    z-index: 111111111111111111111;
+    transition: .5s;
+    width: 0%;
+    height: 2px;
+}
+
+.line{
+    position: absolute;
+    background-color: red;
+}
+
+.box a{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 1111111;
+    transform: translateX(-50%);
+    text-decoration: none;
+    background-color: #fff;
+    padding: 12px 60px;
+    color: #000;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.box a:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.left{
+    width: 49%;
+}
+
+.right{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left2 .box{
+    height: 48%;
+}
+
+.left2,.right2{
+    width: 48%;
+}
+
+@media(max-width:576px) {
+    .all{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+
+    .mid{
+        width: 50%;
+    }
+
+    .right{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .left2, .right2 {
+        width: 49%;
+    }
+}
+#tree{
+    padding: 0 6rem;
+    text-align: center;
+    
+}
+#tree .treeall .up h1{
+    font-size: 28px;
+}
+#tree .treeall .up p{
+    opacity: 0.7;
+}
+#tree .treeall .down{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem 0;
+
+}
+#tree .treeall .down .box{
+    width: 20%;
+    margin-top: 3rem;
+    overflow: hidden;
+    
+}
+
+#tree .down .box .top {
+    overflow: hidden;
+}
+#tree.down .box .top img{
+    width: 100%;
+}
+#tree .treeall .down .box .photo{
+    overflow: hidden;
+}
+#tree .treeall .down .box .photo img{
+    
+    width: 100%;
+}
+#tree .treeall .down .box .photo2 h5{
+    margin: 10px;
+    font-weight: 100;
+    text-align: left;
+    margin-top: .5rem;
+    font-size: 18px;
+}
+#tree .treeall .down .box .photo2 p{
+    margin: 10px;
+    font-weight: 100;
+    text-align: left;
+    margin-top: .5rem;
+    font-size: 18px;
+}
+@media(max-width:576px){
+    #tree{
+        margin-top: -5rem;
+        width: 100%;
+        padding: 0;
+    }
+    #tree .treeall .down .all .top img {
+        width: 100%;
+    }
+    #tree .treeall .down .all{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    #tree .treeall .down .all .box{
+        width: 47%;
+    }
+    
+
+    #tree .treeall .up h1{
+        font-size: 25px;
+    }
+    #tree .treeall .up p{
+        font-size: 15px;
+    }
+    #tree .treeall .down{
+        
+    }
+}
+
+
